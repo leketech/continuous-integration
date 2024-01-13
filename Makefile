@@ -3,6 +3,7 @@
 # Upgrade pip and install dependencies from requirements.txt
 install:
 	pip install --upgrade pip
+	pip install --force-reinstall black
 	pip install -r requirements.txt
 
 # Run tests using pytest
@@ -11,7 +12,9 @@ test:
 
 # Format Python files using black
 format:
-	black *.py
+	black==<22.1.0>
+        click==<8.1.7>
+        # ... other dependencies
 
 # Lint Python files using pylint, with specific rules disabled
 lint:
