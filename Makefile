@@ -12,8 +12,8 @@ test:
 
 # Format Python files using black
 format:
-	black==<22.1.0>
-        click==<8.1.7>
+	black==22.1.0
+        click==8.1.7
         # ... other dependencies
 
 # Lint Python files using pylint, with specific rules disabled
